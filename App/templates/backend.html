@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
-<!-- page content -->
+<!-- Block title -->
 {% block title %} Backend {% endblock %}
+
+<!-- Logout button -->
+
+{% block nav-btn %}
+<a href="{% url 'logout' %}" class="btn btn-outline-danger btn-sm text-light" id="btn-nav">Logout</a>
+{% endblock %}
+
+
 {% block nav-content %}
 <i class="fa-solid fa-user "></i>&nbsp;&nbsp; Administration
 {% endblock %}
-{% block nav-btn %}
-<a href="#" class="btn btn-outline-danger btn-sm text-light" id="btn-nav">Logout</a>
-{% endblock %}
+
 <!-- Page Content -->
 {% block content %}
 <h1 class="text-success text-center" style="position: absolute;top: 50%;left: 50%;margin-right: -50%;transform: translate(-50%,-50%);">Back end</h1>

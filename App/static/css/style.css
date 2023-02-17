@@ -27,3 +27,29 @@ body{
     float: right;
     margin-right:25px;
 }
+
+/*----SECTIONS----*/
+
+.home{background-color:green;}
+.about{background-color:red;}
+.courses{background-color:blue;}
+.contact{background-color:yellow;}
+
+/*---Navbar links----*/
+.links{
+    color:#fff;
+    padding:10px;
+    text-decoration:none;
+}
+.links:hover{
+    color:greenyellow;
+}
+
+/*------Section configuration-------*/
+
+
+/*---OTHERS-----*/
+
+.no-pointer{
+    cursor:default !important
+}

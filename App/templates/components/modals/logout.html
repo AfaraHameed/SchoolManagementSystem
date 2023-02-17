@@ -1,8 +1,19 @@
 {% extends 'components/modals/base_modal.html' %}
 
 {% block modal-id %}id="logout"{% endblock %}
-{% block modal-title %}are you sure to logout??{% endblock %}
-{% block modal-body %}hai.....{% endblock %}
+
+{% block modal-title %}
+<i class="fas fa-power-off">&nbsp; Log out</i>
+{% endblock %}
+
+{% block modal-body %}
+<br>
+<div class="text-danger text-center"><i class="fas fa-power-off fa-3x"></i></div>
+<div class="text-danger text-center mb-3 mt-4">ARE YOU SURE TO LOGOUT??</div>
+
+{% endblock %}
+
 {% block modal-footer %}
-<button type="button" class="btn btn-primary">logout</button>
+<a href="{% url 'logout' %}" class="btn btn-outline-danger btn-sm">logout</a>
+
 {% endblock %}

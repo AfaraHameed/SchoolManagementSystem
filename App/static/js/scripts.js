@@ -4,3 +4,9 @@ window.setTimeout(function() {
         $(this).remove();
     });
 }, 3000);
+
+var active= '.links';
+$(active).on('click' , function(){
+    $(active).removalClass('active');
+    $(this).addClass('active');
+});
